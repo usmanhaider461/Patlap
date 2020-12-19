@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patlap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lib/paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+
+
+        function onKeyDown(event) {
+                var maxPoint = new Point(view.size.width, view.size.height);
+                console.log(maxPoint);
+                var randomPoint = new Point(Point.random(), Point.random);
+                console.log(randomPoint);
+                var point = randomPoint * maxPoint;
+var myCircle = new Path.Circle(point, 50).fillColor = 'red';
+    }
+    
+</script>
+</head>
+
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+
+</html>

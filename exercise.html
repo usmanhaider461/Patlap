@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patlap</title>
+    <script src="lib/paper-full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/paperscript" canvas="myCanvas">
+        for (var x = 100; x < 1100; x += 100) {
+            for(var y = 50; y < 1050; y+= 100)
+            {
+            var circle2 = new Path.Circle(new Point(x, y), 10);
+            circle2.fillColor = 'yellow';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+
+</html>
