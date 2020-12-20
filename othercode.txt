@@ -1,0 +1,20 @@
+ var animateCircle = new Path.Circle(new Point(200, 200), 100);
+        animateCircle.fillColor = "red";
+    function onFrame(event) {
+        animateCircle.fillColor.hue += 1;
+        animateCircle.scale(.9);
+    }
+
+    function onKeyDown(event) {
+var maxPoint = new Point(view.size.width, view.size.height);
+console.log(maxPoint);
+var randomPoint = new Point(Point.random(), Point.random);
+console.log(randomPoint);
+var point = randomPoint * maxPoint;
+var myCircle = new Path.Circle(point, 50);
+myCircle.fillColor = 'red';
+function onFrame(event) {
+myCircle.fillColor.hue += 1;
+myCircle.scale(.9);
+}
+}
